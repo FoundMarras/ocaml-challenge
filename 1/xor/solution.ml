@@ -8,8 +8,10 @@ XOR:
 
 let xor1 : bool -> bool -> bool =
   fun a b ->
-    (not a && b) || (a && not b)
+    
+    (not a && b) || (a && not b) 
 ;;
+
 
 let xor2 : bool -> bool -> bool =
   fun a b ->

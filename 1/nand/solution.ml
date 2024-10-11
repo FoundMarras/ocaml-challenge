@@ -1,4 +1,4 @@
-let nand1 (a: bool) (b: bool) : bool = not(a && b);;
+let nand1 (a: bool) (b: bool) : bool = not(a && b) ;;
 
 let nand2 (a: bool) (b: bool) : bool = 
     if a 
