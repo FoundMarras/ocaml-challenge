@@ -4,11 +4,8 @@ type course = ALF | LIP
 
 let isLecture (d:weekday) (c:course) : bool =
   match (d,c) with
-  | (Tu,ALF) -> true  
-  | (Th,ALF) -> true 
-  | (Fr,ALF) -> true 
-  | (We,LIP) -> true 
-  | (Th,LIP) -> true 
+  | (Tu,ALF)| (Th,ALF) | (Fr,ALF) -> true 
+  | (We,LIP) | (Th,LIP) -> true 
   | _-> false
 ;;
 
