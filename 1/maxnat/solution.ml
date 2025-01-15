@@ -9,6 +9,7 @@ let max_nat (a: int) (b:int) : int =
     else failwith("Warnig! Not natural numbers")
 ;;
 
+
 assert(max_nat 2 5 = 5);;
 assert(max_nat 5 2 = 5);;
 assert(try max_nat (-2) 5 |> fun _ -> false with _ -> true);;
